@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView_Door;
+- (IBAction)button_switch:(id)sender;
 
 @end
 

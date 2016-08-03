@@ -24,4 +24,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button_switch:(id)sender {
+    
+
+    if([sender isOn]){
+        
+        NSLog(@ "Switch is ON");
+        
+        self.imageView_Door.image = [UIImage imageNamed:@"opened"];
+    }
+    
+    else{
+        NSLog(@ "Switch is OFF" );
+        self.imageView_Door.image = [UIImage imageNamed:@"closed"];
+    }
+    
+    
+    
+}
 @end
